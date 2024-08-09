@@ -1,0 +1,92 @@
+.property-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .property-container {
+    flex-direction: column;
+  }
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  border-right: 4px solid #00000022;
+}
+
+.images-container {
+  flex: 1;
+  padding: 1rem;
+}
+
+.properties-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  padding: 1rem 2rem;
+  font-size: 1.75rem;
+}
+
+.right-container {
+  padding: 2rem 0rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+
+.form-container input,
+.form-container textarea {
+  padding: 8px 8px;
+  border-radius: 8px;
+}
+.submit-button {
+  background-color: rgb(34, 68, 238);
+  color: white;
+  padding: 12px 0px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.title {
+  font-weight: bold;
+}
+.price {
+  color: rgb(59, 5, 255);
+}
+.description {
+  font-size: 20px;
+  font-style: italic;
+}
+.rating {
+  font-size: 16px;
+  color: rgb(255, 0, 0);
+}
